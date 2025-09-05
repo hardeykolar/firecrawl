@@ -52,7 +52,7 @@ services:
     build: apps/playwright-service-ts
     shm_size: '2gb'
     environment:
-      PORT: 3000
+      PORT: 3002
       PROXY_SERVER: ${PROXY_SERVER}
       PROXY_USERNAME: ${PROXY_USERNAME}
       PROXY_PASSWORD: ${PROXY_PASSWORD}
