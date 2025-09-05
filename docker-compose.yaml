@@ -50,6 +50,7 @@ services:
     # uncomment the build: statement and comment out the image: statement
     # image: ghcr.io/firecrawl/playwright-service:latest
     build: apps/playwright-service-ts
+    shm_size: '2gb'
     environment:
       PORT: 3000
       PROXY_SERVER: ${PROXY_SERVER}
